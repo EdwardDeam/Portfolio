@@ -1,0 +1,99 @@
+@import "./keyart.css";
+@import "./nav.css";
+@import "./project.css";
+
+* {
+  margin: 0;
+  position: relative;
+  /* box-sizing: border-box; */
+  color: #e6e7e8;
+  font-family: "Questrial", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Old Standard TT", serif;
+  font-size: 4em;
+  font-weight: 900;
+}
+body,
+html {
+  width: 100vw;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8em;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.content {
+  background-color: #3a3e3f;
+  min-height: 1000px;
+}
+
+/* ABOUT ME SKILLS SECTION */
+.about-content {
+  display: flex;
+}
+.skill-heading {
+  padding-top: 100px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.about-heading {
+  padding-top: 100px;
+  text-align: right;
+}
+.about-skills {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.skill-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  align-self: center;
+  justify-self: center;
+}
+.skill-icon svg {
+  position: absolute;
+  left: 12.5%;
+  top: 12.5%;
+  width: 75%;
+}
+
+.skill-spacer {
+  width: 100px;
+  height: 100px;
+}
+.about-blurb {
+  width: 50%;
+}
+.about-blurb p {
+  text-align: justify;
+  padding: 30px 0px 15px 50px;
+  min-height: 400px;
+}
+
+.skill-circle:hover {
+  background-color: palevioletred;
+  cursor: pointer;
+}
+.svg-hover:hover {
+  filter: grayscale(100%) sepia(100%) hue-rotate(190deg);
+  cursor: pointer;
+}

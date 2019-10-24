@@ -1,0 +1,54 @@
+.header {
+  min-height: 1080px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.mobile-header {
+  display: none;
+  min-height: 1080;
+  height: auto;
+  background-image: url(../media/MobileHeader.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.keyart_layer {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 1080px;
+  position: fixed;
+  z-index: -1;
+}
+
+.layer-bg {
+  background-color: #b9e5e9;
+}
+.layer0 {
+  background-image: url(../media/keyart/layer4.png);
+}
+.layer1 {
+  background-image: url(/media/keyart/layer3.png);
+}
+.layer2 {
+  background-image: url(/media/keyart/layer2.png);
+}
+.layer3 {
+  background-image: url(/media/keyart/layer1.png);
+}
+.layer4 {
+  background-image: url(/media/keyart/layer0.png);
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+}
